@@ -1,8 +1,10 @@
 # 📣 Kit de promoción para X (Twitter)
 
-Adjunta el banner según el idioma del post:
-- Post en **español** → `assets/banner.png` (texto en ES)
-- Post en **inglés** → `assets/banner-en.png` (texto en EN)
+Adjunta el banner según el idioma del post (usa la versión **.jpg**, X rechaza
+a veces los PNG generados por Pillow con el error "Alguno de tus contenidos
+multimedia no se subió correctamente"):
+- Post en **español** → `assets/banner.jpg` (texto en ES)
+- Post en **inglés** → `assets/banner-en.jpg` (texto en EN)
 
 El enlace de GitHub mostrará automáticamente `social-preview.png` como tarjeta (inglés).
 
