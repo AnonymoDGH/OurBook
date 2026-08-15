@@ -5,43 +5,31 @@ automáticamente `social-preview.png` como tarjeta.
 
 ---
 
-## 🟣 Opción A — Post único (con imagen)
+## 🟣 Opción A — Post único (con imagen) — ✅ 271 caracteres (límite 280)
 
 **Español:**
 
-> Tu agente ya no necesita recordar tus datos. Necesita recordar vuestra historia. 🌙
+> Tu agente no recuerda tus datos: recuerda vuestra historia. 🌙
 >
-> Presento **OurBook**: un servidor MCP donde el agente construye una memoria compartida contigo.
+> OurBook: un MCP donde el agente guarda recuerdos con emoción, sueña para consolidarlos y escribe su diario.
 >
-> 📖 Recuerdos con emoción
-> 😴 Sueños que consolidan lo vivido (y nunca se confunden con hechos)
-> 📓 Un diario que se escribe cada noche
-> 🎁 El libro exportable como legado
->
-> Y lo mejor: soñar y consolidar cuesta **0 tokens** de tu API principal (motor local + qwen-reverse, con fallback offline).
+> Soñar cuesta 0 tokens de tu API.
 >
 > 🔗 github.com/AnonymoDGH/OurBook
-> 📦 `npm i ourbook && npx ourbook setup`
->
-> #MCP #LLM #Claude #OpenSource #AI
+> npm i ourbook
+> #MCP #LLM #Claude
 
-**English:**
+**English (279 → ~273 en X):**
 
-> Your agent no longer needs to remember your data. It needs to remember your story. 🌙
+> Your agent doesn't remember your data. It remembers your story. 🌙
 >
-> Introducing **OurBook**: an MCP server where the agent builds a shared memory with you.
+> OurBook: an MCP where the agent keeps emotional memories, dreams to consolidate them, and writes its diary.
 >
-> 📖 Memories with emotion
-> 😴 Dreams that consolidate what you lived (and never get confused with facts)
-> 📓 A diary that writes itself every night
-> 🎁 The book, exportable as a legacy
->
-> Best part: dreaming & consolidating costs **0 tokens** of your main API (local engine + qwen-reverse, with offline fallback).
+> Dreaming costs 0 tokens of your API.
 >
 > 🔗 github.com/AnonymoDGH/OurBook
-> 📦 `npm i ourbook && npx ourbook setup`
->
-> #MCP #LLM #Claude #OpenSource #AI
+> npm i ourbook
+> #MCP #LLM #Claude
 
 ---
 
