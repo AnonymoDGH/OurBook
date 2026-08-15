@@ -1,20 +1,25 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
 import { loadConfig } from "./config.js";
-import { openDatabase } from "./db/database.js";
-import { Mnemosyne } from "./mnemosyne/engine.js";
-import { createServer, SERVER_NAME, SERVER_VERSION } from "./server.js";
-import { importSeed, seedFromDump } from "./export/seed.js";
-import { addAudit } from "./db/database.js";
+import { listAgentsText, runSetup, runUninstall } from "./setup/wizard.js";
+import { SERVER_NAME, SERVER_VERSION } from "./version.js";
 import fs from "node:fs";
 
 function usage(): string {
   return `OurBook (Mnemosyne) — MCP de memoria narrativa
 
 Uso:
-  ourbook [--db <ruta>]            Sirve el servidor MCP por stdio (por defecto)
+  ourbook                              Sirve el servidor MCP por stdio (por defecto)
+  ourbook setup                        Detecta tus agentes y registra el MCP (interactivo)
+  ourbook setup --yes [--engine offline|local|qwen-reverse]
+                                       Registra en todos los agentes detectados
+  ourbook setup --agents claude-desktop,cursor [--dry-run]
+                                       Registra solo en los agentes indicados
+  ourbook uninstall [--yes|--agents ...]   Retira OurBook de los agentes
+  ourbook agents                       Muestra qué agentes detectó
   ourbook --import <archivo.json> [--mode merge|fresh] [--db <ruta>]
-                                   Importa una semilla o volcado y sale
+                                       Importa una semilla o volcado y sale
+  ourbook --db <ruta>                  Sirve el MCP con otro libro
   ourbook --version | --help
 
 Variables de entorno:
@@ -32,9 +37,47 @@ Variables de entorno:
 `;
 }
 
+function parseFlags(args: string[]): {
+  yes: boolean;
+  dryRun: boolean;
+  engine?: string;
+  only?: string[];
+} {
+  const flags: { yes: boolean; dryRun: boolean; engine?: string; only?: string[] } = {
+    yes: false,
+    dryRun: false,
+  };
+  for (let i = 0; i < args.length; i++) {
+    const a = args[i]!;
+    if (a === "--yes" || a === "-y") flags.yes = true;
+    else if (a === "--dry-run") flags.dryRun = true;
+    else if (a === "--engine") flags.engine = args[++i];
+    else if (a === "--agents") flags.only = (args[++i] ?? "").split(",").map((s) => s.trim()).filter(Boolean);
+  }
+  return flags;
+}
+
 async function main(): Promise<void> {
   const args = process.argv.slice(2);
   const cfg = loadConfig();
+
+  const sub = args[0]?.toLowerCase();
+  if (sub === "setup" || sub === "install") {
+    await runSetup(parseFlags(args.slice(1)));
+    return;
+  }
+  if (sub === "uninstall") {
+    await runUninstall(parseFlags(args.slice(1)));
+    return;
+  }
+  if (sub === "agents") {
+    console.log(listAgentsText());
+    return;
+  }
+  if (sub === "--help" || sub === "-h" || sub === "help") {
+    console.log(usage());
+    return;
+  }
 
   let importPath: string | null = null;
   let importMode: "merge" | "fresh" = "merge";
@@ -56,10 +99,13 @@ async function main(): Promise<void> {
     }
   }
 
-  const db = openDatabase(cfg.dbPath);
+  const db = (await import("./db/database.js")).openDatabase(cfg.dbPath);
+  const Mnemosyne = (await import("./mnemosyne/engine.js")).Mnemosyne;
   const mnemosyne = new Mnemosyne(cfg, db);
 
   if (importPath) {
+    const { seedFromDump, importSeed } = await import("./export/seed.js");
+    const { addAudit } = await import("./db/database.js");
     let raw: string;
     try {
       raw = fs.readFileSync(importPath, "utf8");
@@ -83,6 +129,7 @@ async function main(): Promise<void> {
     }
   }
 
+  const { createServer } = await import("./server.js");
   const server = createServer(db, cfg, mnemosyne);
   const transport = new StdioServerTransport();
   await server.connect(transport);

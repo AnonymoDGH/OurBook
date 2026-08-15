@@ -77,6 +77,7 @@
 [![SQLite](https://img.shields.io/badge/SQLite-FTS5-0f80cc?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](https://www.sqlite.org)
 [![License](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](LICENSE)
 [![v0.1.0](https://img.shields.io/badge/version-0.1.0%20experimental-ef4444?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](#)
+[![npm](https://img.shields.io/npm/v/ourbook?style=for-the-badge&label=npm&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](https://www.npmjs.com/package/ourbook)
 [![English](https://img.shields.io/badge/language-English-10b981?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](#)
 
 > **The first MCP where the agent doesn't remember *your data* — it remembers *your story*.**
@@ -268,6 +269,24 @@ npm run build && npm start -- --db "C:\Users\YOU\.ourbook\ourbook.db"
 
 > 💡 Start with `OURBOOK_ENGINE=offline` (zero configuration, 100% local).
 > Turn on the remote engine when you want richer dreams (see ⬇️).
+
+---
+
+## 🧭 Install into your agents (one command)
+
+OurBook detects which MCP agents are installed on your machine and lets you choose where to register the server:
+
+```bash
+npx ourbook setup            # detects agents and lets you pick (interactive)
+npx ourbook setup --yes      # installs into every detected agent
+npx ourbook setup --agents claude-desktop,cursor --dry-run   # preview only
+npx ourbook agents           # just show what was detected
+npx ourbook uninstall        # remove OurBook from an agent
+```
+
+**Supported agents:** Claude Desktop · Claude Code (CLI) · Cursor · OpenCode · Windsurf · VS Code (Copilot) · Zed · Gemini CLI
+
+The wizard writes each agent's native format (`mcpServers` / `servers` / `mcp` / `context_servers` / `mcp_servers`), **backs up** existing configs before touching them, registers `ourbook` with an absolute `node` command, and never modifies your other servers. After installing, restart the agent (or `/mcp` in Claude Code).
 
 ---
 

@@ -23,9 +23,7 @@ import {
 } from "./types.js";
 import { getPersona, latestDreams, listTurningPoints, getChapter } from "./db/repo.js";
 import { dateOnly } from "./lib/util.js";
-
-export const SERVER_NAME = "OurBook";
-export const SERVER_VERSION = "0.1.0";
+import { SERVER_NAME, SERVER_VERSION } from "./version.js";
 
 export function createServer(db: DatabaseSync, cfg: Config, mnemosyne: Mnemosyne): McpServer {
   const server = new McpServer({ name: SERVER_NAME, version: SERVER_VERSION });
