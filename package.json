@@ -10,7 +10,8 @@
   "files": [
     "dist",
     "mnemosyne",
-    "README.md"
+    "README.md",
+    "README.es.md"
   ],
   "scripts": {
     "build": "tsc",
