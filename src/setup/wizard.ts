@@ -21,13 +21,18 @@ import {
 export function ourbookServerCommand(): { command: string; args: string[] } {
   const here = path.dirname(fileURLToPath(import.meta.url));
   const candidates = [
-    path.resolve(here, "..", "dist", "index.js"), // desde src/setup o dist/setup
-    path.resolve(here, "dist", "index.js"), // desde dist
+    // wizard compilado: <paquete>/dist/setup -> <paquete>/dist/index.js
+    path.resolve(here, "..", "index.js"),
+    // wizard en dev (src/setup) -> <raiz>/dist/index.js
+    path.resolve(here, "..", "..", "dist", "index.js"),
+    // instalado y ejecutado desde dist -> <raiz>/dist/index.js
+    path.resolve(here, "dist", "index.js"),
     path.resolve(process.cwd(), "dist", "index.js"),
   ];
   const distIndex = candidates.find((c) => fs.existsSync(c));
   if (distIndex) return { command: process.execPath, args: [distIndex] };
-  return { command: "ourbook", args: [] };
+  // último recurso: vía npx (el paquete está publicado)
+  return { command: "npx", args: ["--yes", "ourbook"] };
 }
 
 function ask(question: string): Promise<string> {

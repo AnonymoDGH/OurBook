@@ -14,6 +14,7 @@ import {
   type ConfigKind,
   type PathProvider,
 } from "../src/setup/agents.js";
+import { ourbookServerCommand } from "../src/setup/wizard.js";
 
 let tmp: string;
 let paths: PathProvider;
@@ -103,6 +104,17 @@ describe("escritura con backup", () => {
 });
 
 describe("ciclo completo sobre configs reales", () => {
+  it("ourbookServerCommand resuelve al dist/index.js del paquete (regresión)", () => {
+    const { command, args } = ourbookServerCommand();
+    if (command === process.execPath) {
+      expect(args[0]).toBeTruthy();
+      expect(fs.existsSync(args[0]!)).toBe(true);
+      expect(args[0]!.replace(/\\/g, "/")).toMatch(/dist\/index\.js$/);
+    } else {
+      expect(command).toBe("npx"); // fallback: paquete publicado
+    }
+  });
+
   it("instala y desinstala en formato opencode (mcp)", () => {
     const cfgPath = path.join(paths.home, ".config", "opencode", "opencode.json");
     writeConfig(cfgPath, { $schema: "https://opencode.ai/config.json" });

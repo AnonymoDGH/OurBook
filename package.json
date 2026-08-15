@@ -1,6 +1,6 @@
 {
   "name": "ourbook",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "OurBook (Mnemosyne): MCP de memoria narrativa — la vida compartida entre el agente y el usuario. Recuerdos, sueños, consolidación y un libro coautorado.",
   "type": "module",
   "main": "dist/index.js",
