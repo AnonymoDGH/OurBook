@@ -10,15 +10,29 @@
   "files": [
     "dist",
     "mnemosyne",
+    "assets/ourbook-logo-256.png",
     "README.md",
     "README.es.md"
   ],
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnonymoDGH/OurBook.git"
+  },
+  "homepage": "https://github.com/AnonymoDGH/OurBook#readme",
+  "bugs": {
+    "url": "https://github.com/AnonymoDGH/OurBook/issues"
+  },
+  "author": "AnonymoDGH",
   "scripts": {
     "build": "tsc",
     "dev": "tsx src/index.ts",
     "start": "node dist/index.js",
     "test": "vitest run",
-    "demo": "tsx scripts/demo.ts"
+    "demo": "tsx scripts/demo.ts",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
     "mcp",
