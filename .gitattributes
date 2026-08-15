@@ -1,0 +1,13 @@
+# Normaliza fin de línea: LF en el repo (los checkouts en Windows usan CRLF)
+* text=auto eol=lf
+
+# Binarios / generados
+*.db binary
+*.db-wal binary
+*.db-shm binary
+*.png binary
+*.jpg binary
+*.svg text eol=lf
+*.md text eol=lf
+*.ts text eol=lf
+*.py text eol=lf

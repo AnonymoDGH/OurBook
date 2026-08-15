@@ -1,0 +1,4 @@
+# Mnemosyne worker — motor de fondo opcional de OurBook.
+# Instalación: pip install -r mnemosyne/requirements.txt
+# Sin él, OurBook funciona igual con los generadores offline (deterministas).
+qwen-reverse>=0.1.4
