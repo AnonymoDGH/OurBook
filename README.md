@@ -2,6 +2,8 @@
 
 [English](README.md) · [Español](README.es.md)
 
+<img src="assets/ourbook-logo-256.png" alt="OurBook logo — open book and crescent moon" width="150"/>
+
 <!-- ============================== HERO ============================== -->
 <svg width="860" height="300" viewBox="0 0 860 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OurBook — the shared life between the agent and you">
   <defs>
@@ -70,12 +72,12 @@
 </svg>
 
 <!-- ============================== BADGES ============================== -->
-[![MCP](https://img.shields.io/badge/MCP-Server%20%7C%20stdio-8b5cf6?style=for-the-badge)](https://modelcontextprotocol.io)
-[![Node](https://img.shields.io/badge/Node.js-%E2%89%A522.5-339933?style=for-the-badge)](https://nodejs.org)
-[![SQLite](https://img.shields.io/badge/SQLite-FTS5-0f80cc?style=for-the-badge)](https://www.sqlite.org)
-[![License](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge)](LICENSE)
-[![v0.1.0](https://img.shields.io/badge/version-0.1.0%20experimental-ef4444?style=for-the-badge)](#)
-[![English](https://img.shields.io/badge/language-English-10b981?style=for-the-badge)](#)
+[![MCP](https://img.shields.io/badge/MCP-Server%20%7C%20stdio-8b5cf6?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](https://modelcontextprotocol.io)
+[![Node](https://img.shields.io/badge/Node.js-%E2%89%A522.5-339933?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](https://nodejs.org)
+[![SQLite](https://img.shields.io/badge/SQLite-FTS5-0f80cc?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](https://www.sqlite.org)
+[![License](https://img.shields.io/badge/License-MIT-f59e0b?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](LICENSE)
+[![v0.1.0](https://img.shields.io/badge/version-0.1.0%20experimental-ef4444?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](#)
+[![English](https://img.shields.io/badge/language-English-10b981?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTQgNGMxLjYgMCAzLjEuNSA0LjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgNGE4LjQgOC40IDAgMCAxIDMuNSAxLjNBOC40IDguNCAwIDAgMSAyMCA0djEzLjdhOC40IDguNCAwIDAgMC0zLjUgMS4zQTguNCA4LjQgMCAwIDEgMTIgMjAuM2E4LjQgOC40IDAgMCAxLTMuNS0xLjNBOC40IDguNCAwIDAgMCA0IDE3LjdWNHoiLz4KICA8cGF0aCBmaWxsPSIjZmZmIiBkPSJNMTIgNGMxLjMuNyAyLjMgMS4xIDMuNSAxLjNWMTlhOC40IDguNCAwIDAgMC0zLjUtMS4zVjR6Ii8+CiAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTE4LjUgMi41YTguNSA4LjUgMCAxIDAgMy40IDExIDYuOSA2LjkgMCAwIDEtMy40LTExeiIvPgo8L3N2Zz4K)](#)
 
 > **The first MCP where the agent doesn't remember *your data* — it remembers *your story*.**
 
