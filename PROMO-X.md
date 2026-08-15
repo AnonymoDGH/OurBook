@@ -1,7 +1,10 @@
 # 📣 Kit de promoción para X (Twitter)
 
-Adjunta `assets/banner.png` a tu post. El enlace de GitHub mostrará
-automáticamente `social-preview.png` como tarjeta.
+Adjunta el banner según el idioma del post:
+- Post en **español** → `assets/banner.png` (texto en ES)
+- Post en **inglés** → `assets/banner-en.png` (texto en EN)
+
+El enlace de GitHub mostrará automáticamente `social-preview.png` como tarjeta (inglés).
 
 ---
 
@@ -19,7 +22,7 @@ automáticamente `social-preview.png` como tarjeta.
 > npm i ourbook
 > #MCP #LLM #Claude
 
-**English (279 → ~273 en X):**
+**English (279 → ~273 en X) — adjunta `assets/banner-en.png`:**
 
 > Your agent doesn't remember your data. It remembers your story. 🌙
 >
